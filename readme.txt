@@ -36,9 +36,5 @@ Customer
 MVP Model
 ----------
 
-07-May-2023
-
-TASKS 
--------
 1. Read about PHP $_SESSION - DONE
 2. Encoding type as "multipart/form-data" - Uploading a File to server - DONE
