@@ -25,7 +25,7 @@ include "../share/authgaurd.php";
 include "menu.html";
 
 $userid=$_SESSION['userid'];
-// $cartid=$_SESSION['cartid'];
+
 include_once "../share/connection.php";
 $sql_result=mysqli_query($conn,"select * from cart join product on product.pid=cart.pid where product.uploaded_by=$userid and is_ordered=1");
 
@@ -49,6 +49,9 @@ while($row=mysqli_fetch_assoc($sql_result))
                 <img src='$impath'> 
             </div>
             <div>$details</div>
+            <a href='review.php?cartid=$cartid'>
+                <button class='btn btn-primary'>Mark Deleiverd</button>
+            </a>
             
     </div>";
 }
