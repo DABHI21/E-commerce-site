@@ -48,9 +48,7 @@ while($row=mysqli_fetch_assoc($sql_result))
                 <img src='$impath'> 
             </div>
             <div>$details</div>
-            <a href='review.php?cartid=$cartid'  >
-                <button class='btn btn-primary'>Mark Deleiverd</button>
-            </a>
+            
     </div>";
 }
 
